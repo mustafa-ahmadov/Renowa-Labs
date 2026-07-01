@@ -10,28 +10,29 @@
   <meta property="og:description" content="Tech solutions, coming soon." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://renowa-labs.com" />
+  <meta property="og:image" content="https://renowa-labs.com/assets/bg-poster.jpg" />
 
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg" aria-hidden="true"></div>
+  <video class="bg" autoplay muted loop playsinline poster="assets/bg-poster.jpg" aria-hidden="true">
+    <source src="assets/bg-video.mp4" type="video/mp4" />
+  </video>
+  <div class="scrim" aria-hidden="true"></div>
 
   <main class="wrap">
-    <div class="brand">
+    <div class="stack">
+      <span class="eyebrow">Coming soon</span>
       <img class="logo" src="assets/logo.png" alt="Renowa Labs logo" />
-      <span class="brand-name">Renowa Labs</span>
-    </div>
-
-    <div class="spacer"></div>
-
-    <div class="content">
+      <h1 class="brand-name">Renowa Labs Cooperation</h1>
       <p class="tagline">Technology solutions. Thoughtfully engineered.</p>
       <a class="contact" href="mailto:info@renowa-labs.com">info@renowa-labs.com</a>
-      <footer>
-        <span>&copy; <span id="year"></span> Renowa Labs. All rights reserved.</span>
-      </footer>
     </div>
+
+    <footer>
+      <span>&copy; <span id="year"></span> Renowa Labs. All rights reserved.</span>
+    </footer>
   </main>
 
   <script>
