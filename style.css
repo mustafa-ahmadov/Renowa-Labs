@@ -46,7 +46,13 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+}
+
+.logo {
+  height: 34px;
+  width: auto;
+  display: block;
 }
 
 .brand-name {
