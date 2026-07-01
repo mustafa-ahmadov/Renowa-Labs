@@ -39,8 +39,29 @@ body {
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.72) 65%, rgba(255, 255, 255, 0.92) 100%);
 }
 
+.brand {
+  position: fixed;
+  top: 28px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.brand .logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.brand-name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .wrap {
-  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,55 +71,21 @@ body {
   text-align: center;
 }
 
-.stack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 480px;
-}
-
-.eyebrow {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  padding: 6px 16px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  margin-bottom: 28px;
-}
-
-.logo {
-  height: 64px;
-  width: auto;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.brand-name {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin: 0 0 12px;
-}
-
-.tagline {
-  font-size: 1.05rem;
-  color: var(--muted);
-  font-weight: 500;
-  line-height: 1.5;
-  margin: 0 0 32px;
+.coming-soon {
+  font-size: clamp(3rem, 12vw, 9rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0 0 40px;
 }
 
 .contact {
   display: inline-block;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--ink);
   text-decoration: none;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border: 1px solid var(--border);
   border-radius: 999px;
   transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
@@ -111,11 +98,12 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 0;
   right: 0;
   text-align: center;
   font-size: 0.8rem;
   color: var(--muted);
+  z-index: 1;
 }
